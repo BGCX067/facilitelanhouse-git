@@ -5,6 +5,14 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^$', 'facilitelanhouse.views.home'),
+
+	# public
+	url(r'^public/', include('public.urls')),
+
+	# private
+	url(r'^private/', include('private.urls')),
+
     # Examples:
     # url(r'^$', 'facilitelanhouse.views.home', name='home'),
     # url(r'^facilitelanhouse/', include('facilitelanhouse.foo.urls')),

@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-	{% block title %}
-	{% endblock %}
-
-	{% block css %}
-	{% endblock %}
-	
-	{% block js %}
-	{% endblock %}
 <head>
-</html>
+	<title>{% block title %}{{ title }} | Facilite Lan House{% endblock %}</title>
+
+	{% block css %}{% endblock %}
+	
+	{% block js %}{% endblock %}
+</head>
 <body>
 	<header>
 		<h1>Cabeçalho</h1>
@@ -19,7 +16,7 @@
 	{% endblock %}
 
 	<footer>
-		<<p>Rodapé</p>
+		<p>Rodapé</p>
 	</footer>
 </body>	
 </html>
