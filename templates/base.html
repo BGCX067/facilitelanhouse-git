@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>{% block title %}{{ title }} | Facilite Lan House{% endblock %}</title>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
 
-	{% block css %}{% endblock %}
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>{% block title %}{{ title }} | Facilite Lan House{% endblock %}</title>
 	
-	{% block js %}{% endblock %}
-</head>
-<body>
-	<header>
-		<h1>Cabeçalho</h1>
-	</header>
-
-	{% block conteudo %}
-	{% endblock %}
-
-	<footer>
-		<p>Rodapé</p>
-	</footer>
-</body>	
+		{% block css %}{% endblock %}
+		
+		{% block js %}{% endblock %}
+	</head>
+	<body>
+		<header>
+			<h1>Cabeçalho</h1>
+		</header>
+	
+		{% block conteudo %}
+		{% endblock %}
+	
+		<footer>
+			<p>Rodapé</p>
+		</footer>
+	</body>	
 </html>
