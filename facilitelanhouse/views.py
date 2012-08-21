@@ -4,8 +4,8 @@ from django.shortcuts import redirect
 
 def home(request):
 	if request.user.is_authenticated():
-		next = 'private.views.home'
+		next = 'private.views.index'
 	else:
-		next = 'public.views.home'
+		next = 'public.views.index'
 
 	return redirect(next)

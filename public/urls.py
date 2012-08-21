@@ -5,5 +5,5 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^$', 'public.views.home'),
+	url(r'^$', 'public.views.index'),
 )
